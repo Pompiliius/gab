@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Жа?а жыл ??тты?тауы</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1c3d7a, #2a1c4d);
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            animation: cardAppear 1s ease-out;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #FFD700;
+            animation: glowing 2s infinite;
+        }
+
+        .message {
+            line-height: 1.8;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .message p {
+            margin-bottom: 15px;
+        }
+
+        .signature {
+            text-align: right;
+            margin-top: 30px;
+            color: #FFD700;
+            font-style: italic;
+        }
+
+        .snow {
+            color: white;
+            font-size: 20px;
+            position: fixed;
+            top: -20px;
+            animation: falling linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes cardAppear {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glowing {
+            0% { text-shadow: 0 0 5px #FFD700; }
+            50% { text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700; }
+            100% { text-shadow: 0 0 5px #FFD700; }
+        }
+
+        @keyframes falling {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(110vh) rotate(360deg); }
+        }
+
+        .heart {
+            display: inline-block;
+            color: #ff4d4d;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .highlight {
+            color: #FFD700;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                ?? Жа?а жыл 2025 ??
+            </div>
+            
+            <div class="message">
+                <p>Жаным бауырым! <span class="heart">??</span></p>
+
+                <p>Келіп жеткен Жа?а жыл ??тты болсын! ?мірі?дегі ?рбір с?т жар?ын естеліктерге толсын, ?р к?ні? шатты? пен ба?ыт?а толы болсын!</p>
+
+                <p>Са?ан шынайы ж?ректен зор денсаулы?, сар?ылмас ?уат, шексіз махаббат пен арман-ма?саттары?ны? орындалуын тілеймін.</p>
+
+                <p>Сені? ?мірі?дегі ?рбір жа?а жыл жа?а м?мкіндіктерді? есігін ашып, тек жа?сылы? ?келсін! Сен мен ?шін ерекше жансы?, ?мірімдегі е? жа?ын серігімсі?. Осы жылы да бір-бірімізге тірек болып, талай ?демі с?ттерді бірге б?лісейік!</p>
+
+                <p>Са?ан жа?а жыл?а мол денсаулы?, ??нсыз білім, жа?сы денсаулы?, ж?регі?е ?шпес иман тілеймін ??</p>
+
+                <p>Отбасы?а береке, ата-ана?а ба?ыт, ата-ана?а сені? ?ызы?ы?ды к?руді н?сіп еткей ??</p>
+
+                <p>Алды?а ?ой?ан барша арман ма?саты?а жетуге тілектеспін <span class="heart">????</span></p>
+
+                <p>Жаман іс ?рекеттері? б?рі ескі жылда ?алып, Жа?а жылда жа?а ?мір бастауды Аллам н?сіп еткей ????</p>
+
+                <p>Досты?ымыз Гау?ар тастан ?ымбат, берекелі м??гі бол?ай ж?неде а?ша немес бас?а бір причина емес тек ?лім ажырат?ай ??</p>
+
+                <p>Біз біргеміз брат сен сия?ты жанмен парталас ж?неде таныс?аныма ?те ?уаныштымын, Досы?ды к?рсет десе ма?танып к?рсететін сен сия?ты досымны? барына Алла?а мы? ал?ыс ????</p>
+
+                <p>?р?ашан биік шы?дардан к?ріне бер, армандары?а ?ыйынды?сыз жеткейсі?, б?рі шын ж?рекпен брат ????</p>
+
+                <p class="highlight">С?ЙГЕНІ?Е С?РІНБЕЙ ЖЕТШІ Е? БАСТЫСЫ ????</p>
+
+                <p>Брат, жаным бауырым айта берсем тілек к?п ?зі?е не армандап не тілесе? соны? б?рі орындал?ай ??<span class="heart">????</span></p>
+            </div>
+            
+            <div class="signature">
+                Ізгі тілекпен,<br>
+                Айдархан ?абит
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function createSnow() {
+            for(let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const snow = document.createElement('div');
+                    snow.innerHTML = '?';
+                    snow.className = 'snow';
+                    snow.style.left = Math.random() * 100 + 'vw';
+                    snow.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                    snow.style.opacity = Math.random();
+                    document.body.appendChild(snow);
+
+                    setTimeout(() => snow.remove(), 5000);
+                }, i * 200);
+            }
+        }
+
+        setInterval(createSnow, 10000);
+        createSnow();
+    </script>
+</body>
+</html>
